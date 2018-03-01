@@ -1,6 +1,6 @@
 // HOW IT WORKS
-// Split array into halves each time
-// Recursively sort each half and merge them
+// 1. Split array into halves each time
+// 2. Recursively sort each half and merge them
 
 // Inputs: left subarray and right subarray
 // Outputs: sorted subarrays concatenated into one array
@@ -51,6 +51,9 @@ console.log(mergeSort([1, 5, 4, 2, 3]));
 
 
 
+
+// ------------------- TRANSPILED FROM GAYLE LAAKMANN MCDOWELL'S JAVA SOLUTION -------------------
+
 // Inputs: array, left most index of array, middle index of array, right most index of array
 // Outputs: none
 // Constraints: none
@@ -82,8 +85,8 @@ var mergeCTCI = (array, temp, leftStart, rightEnd) => {
 var mergeSortCTCI = (array, left, right) => {
   if (left < right) {
     let mid = Math.floor((left + right) / 2);
-    let leftArr = mergeSort(array, left, mid);
-    let rightArr = mergeSort(array, mid + 1, right);
+    let leftArr = mergeSortCTCI(array, left, mid);
+    let rightArr = mergeSortCTCI(array, mid + 1, right);
     return mergeCTCI(array, array.slice(), left, right);
   }
 };
