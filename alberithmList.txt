@@ -1,0 +1,69 @@
+-----------------------------STRING / ARRAY-----------------------------
+Reverse Array without affecting special char
+All possible palindromic partitions
+Count triplets with sum smaller than value
+Convert Array into zig zag
+Pythagorean triplet in Array
+Length of largest subarray with contiguous elements
+Find smallest positive num that cannot be represented as sum of any subset of given array
+Smallest subarray with sum greater than value
+Stock buy sell to maximize profit
+
+-------------------------------SEARCHING-------------------------------
+Binary Search
+Interpolation Search
+Given sorted array and num x, find pair whose sum is closest to x
+
+--------------------------------SORTING--------------------------------
+Bubble Sort
+Insertion Sort
+Merge Sort
+Heap Sort (Binary Heap)
+Quick Sort
+
+---------------------------------TREE---------------------------------
+Find minimum depth of Binary Tree
+Maximum Path Sum in Binary Tree
+Check if given array can represent Preorder of BST
+Check whether Binary Tree is full
+Bottom view Binary Tree
+Print nodes in top view of Binary Tree
+Remove nodes on root to leaf paths of length < K
+Lowest Common Ancestor in BST
+Check if Binary Tree is subtree of another Binary Tree
+Reverse alternate levels of perfect Binary Tree
+
+------------------------------LINKED LIST------------------------------
+Insert node into List
+Delete node from List
+Compare 2 strings represented as Lists
+Add 2 numbers represented by Lists
+Merge List into another List at alternate positions
+Reverse a list in groups of given size
+Union and Intersection of Lists
+Detect and Remove Loop in List
+Merge Sort for List
+Select Random Node from List
+
+---------------------------------GRAPH---------------------------------
+Breadth First Search
+Depth First Search
+Shortest Path to all vertices (Dijkstra)
+Topological Sort
+
+--------------------------DYNAMIC PROGRAMMING--------------------------
+Longest Common Subsequence
+Longest Increasing Subsequence
+Edit Distance
+Minimum Partition
+Ways to cover a Distance
+Longest Path in Matrix
+Subset Sums
+Optimal Strategy for a Game
+0-1 Knapsack
+Boolean Paranthesization
+
+
+
+
+
