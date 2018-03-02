@@ -3,17 +3,17 @@ function Queue2Stacks() {
   this.stack2 = [];
 };
 
-// Push item onto inStackArray
+// Push item onto stack1
 Queue2Stacks.prototype.enqueue = function(value) {
   this.stack1.push(value);
 };
 
-// Remove item from outStackArray
+// Remove item from stack2
 // If non-empty, we're really just returning top element from outStack
 Queue2Stacks.prototype.dequeue = function() {
-  // If outStackArray is empty
+  // If stack2 is empty
   if (this.stack2.length === 0) {
-    // Push everything from inStackArray into outStackArray
+    // Push everything from stack1 into stack2
     while (this.stack1.length > 0) {
       this.stack2.push(this.stack1.pop());
     }
