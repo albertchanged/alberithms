@@ -200,6 +200,55 @@ const pathFromTo = (start, finish) => {
   return path.join('->');
 }
 
+// SHORTEST PATH
+
+const shortestPath = (start, end) => {
+  if (!start || !end) {
+    return null;
+  }
+  if (start === end) {
+    return null;
+  }
+  let toVisit = [start];
+  let parents = new Map();
+  // Start doesn't have a parent
+  parents.set(start, null)
+  // While toVisit is not empty
+  while (toVisit.length > 0) {
+    let current = toVisit.shift();
+    // If nodes are equal, break
+    if (current === end) {
+      break;
+    }
+    // If current doesn't have children, skip it
+    if (!this.adjList[current]) {
+      continue;
+    }
+    // For each child of current
+    for (let child of this.adjList[current]) {
+      if (!parents.has(child)) {
+        toVisit.push(child);
+        parents.set(child, current);
+      }
+    }
+  }
+  // If destination node has not been added to parents,
+  // we didn't find a path
+  if (parents.get(end) === null) {
+    return null;
+  }
+  // Initialize out list
+  let out = [];
+  // Traverse backwards from end to see its parents
+  let current = end;
+  // Push children from the back
+  while (current) {
+    out.unshift(current);
+    current = parents.get(current);
+  }
+  return out;
+}
+
 // MATRIX TRAVERSAL
 
 const dirList = [ [0, 1], [0, -1], [1, 0], [-1, 0] ];
